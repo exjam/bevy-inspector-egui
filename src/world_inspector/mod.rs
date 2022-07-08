@@ -510,7 +510,7 @@ fn display_by_reflection(
     let mut reflected = {
         let world = unsafe { &mut *(world as *mut _) };
         reflect_component
-            .reflect_component_mut(world, entity)
+            .reflect_mut(world, entity)
             .ok_or(())?
     };
 
