@@ -151,7 +151,7 @@ impl Default for InspectableRegistry {
 
         #[cfg(feature = "bevy_ui")]
         {
-            register!(this Display, Style, Size<f32>, Size<Val>, Val, bevy::ui::FocusPolicy);
+            register!(this Display, Style, Size, Val, bevy::ui::FocusPolicy);
             register!(this PositionType, Direction, FlexDirection, FlexWrap, AlignItems, AlignSelf, JustifyContent);
         }
 
